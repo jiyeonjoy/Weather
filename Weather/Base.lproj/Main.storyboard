@@ -24,6 +24,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqu-eA-oxl">
                                 <rect key="frame" x="154" y="135" width="82" height="30"/>
                                 <state key="normal" title="날씨 가져오기"/>
+                                <connections>
+                                    <action selector="tapFetchWeatherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="njl-b0-K1V"/>
+                                </connections>
                             </button>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OmS-QX-w6h">
                                 <rect key="frame" x="24" y="215" width="342" height="143.33333333333337"/>
@@ -89,6 +92,15 @@
                             <constraint firstItem="pwo-4o-mx6" firstAttribute="top" secondItem="MWf-h0-bVU" secondAttribute="top" constant="30" id="xEB-1K-IBo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="6ts-PE-HgB" id="eIv-FJ-OOS"/>
+                        <outlet property="cityNameTextField" destination="pwo-4o-mx6" id="dz7-HZ-K8H"/>
+                        <outlet property="maxTempLabel" destination="VgS-7K-AA0" id="u59-cw-QoW"/>
+                        <outlet property="minTempLabel" destination="lav-0t-Dca" id="z5d-E1-ALx"/>
+                        <outlet property="tempLabel" destination="Azs-xR-Cwe" id="uPy-kP-hPc"/>
+                        <outlet property="weatherDescriptionLabel" destination="8dF-2X-vYY" id="zet-o7-nzL"/>
+                        <outlet property="weatherStackView" destination="OmS-QX-w6h" id="YVj-Tm-X9V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
